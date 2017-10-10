@@ -1,0 +1,11 @@
+body {
+	background-color: azure;
+	border: 1px solid aquamarine;
+	padding: 30px;
+}
+header {
+	text-align: center;
+}
+footer {
+	text-align: center;
+}
