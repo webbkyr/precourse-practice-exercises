@@ -8,14 +8,14 @@ a {
 }
 
 main {
+	padding-top: 90px;
 	width: 1000px;
 }
 
 
 body {
-	background-image: url(https://tf-assets-prod.s3.amazonaws.com/tf-curric/WEB-DEV-001/2.4.3_the_position_property/outerspace_landscape.jpeg);
+	background: url(https://tf-assets-prod.s3.amazonaws.com/tf-curric/WEB-DEV-001/2.4.3_the_position_property/outerspace_landscape.jpeg) no-repeat;
 	background-size: cover;
-	margin: 0 auto;
 
 
 }
@@ -55,21 +55,27 @@ li::after {
 }
 
 .box {
+	position: relative;
 	width: 600px;
 	height: 300px;
-	margin: 0 auto;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
 	border: 7px dashed green;
 
 }
 
 .cat-body {
-	position: relative;
+	position: absolute;
+	top: -90px;
+	left: -60px;
 	width: 200px;
-	height: 200px;
 
 }
 
 .dog-body {
 	position: absolute;
-	right: 0;
+	right: -50px;
+	bottom: -70px;
+	width: 200px;
 }
