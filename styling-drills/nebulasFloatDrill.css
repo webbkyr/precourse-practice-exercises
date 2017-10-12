@@ -1,0 +1,42 @@
+body * {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* your styles go here! */ 
+
+body {
+	background-color: black
+}
+
+main {
+	width: 960px;
+	padding: 40px;
+	color: white;
+	margin: 0 auto;
+
+
+}
+
+h1,
+h3,
+p {
+	margin: 0 auto;
+}
+
+.photo1, .photo2 {
+
+	margin: 20px;
+}
+
+.photo1 {
+	float: left;
+}
+
+.photo2 {
+	float: right;
+}
