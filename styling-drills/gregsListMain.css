@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin-top: 0;
+	margin-left: 0
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	margin-top: 0;
+	position: fixed;
+	background-color: lightgrey;
+	height: 60px;
+	width: 100%;
+	padding-left: 10px;
+}
+
+h1, li {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+h1 {
+	margin-top: 15px;
+}
+
+ul {
+	position: absolute;
+	right: 20px;
+	top: 5px;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+	margin: 5px;
+	padding: 5px;
+
+}
+
+label {
+	position: relative;
+	left: 50px;
+	top: 150px;
+}
+
+input {
+	width: 350px;
+	height: 40px;
+	padding: 10px;
+	border-radius: 2%;
+	border: 1px solid lightgrey;
+	position: relative;
+	left: 50px;
+	top: 200px;
+	font-size: 14px;
+}
+
+.getMoreResults {
+	position: absolute;
+	top: 300px;
+	left: 100px;
+	width: 300px;
+	height: 40px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+.previous,
+.resultNum,
+.next {
+	display: inline-block;
+}
+
+.results {
+	width: 450px;
+	height: 200px;
+	position: relative;
+	left: 50px;
+	top: 300px;
+}
+
+.date, .jobTitle, .location {
+	display: inline-block;
+	height: 20px;
+	font-size: 18px;
+
+}
+
+
+
+.date {
+	padding-right: 10px;
+	color: lightgrey;
+}
+
+.jobTitle {
+	padding-right: 10px;
+	font-weight: bold;
+}
+
+.location {
+	color: lightgrey;
+
+}
