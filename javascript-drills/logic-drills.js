@@ -210,8 +210,7 @@ function accessLastItem(array) {
 
 
 
-/* From here down, you are not expected to 
-   understand.... for now :)  
+/* return the a new array with the length of the array that's called - 1
    
    
    Nothing to see here!
