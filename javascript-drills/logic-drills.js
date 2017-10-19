@@ -1,3 +1,5 @@
+'use strict';
+
 function doTrafficLights() {
   const activeLight = getActiveLight();
   if (activeLight === 'red') {
@@ -80,7 +82,7 @@ console.log(makeList(1, 2, 3));
 
 function testMakeList() {
   
-  const items = ["prime rib", "fried goat cheese salad", "fish tacos"];
+  const items = ['prime rib', 'fried goat cheese salad', 'fish tacos'];
   const result = makeList(items[0], items[1], items[2]);
   
   if (
@@ -101,7 +103,7 @@ testMakeList();
 
 function addToList(list, item) {
   list.push(item);
-   return list;
+  return list;
 }
 
 
@@ -120,9 +122,9 @@ function addToList(list, item) {
 
 function testAddToList() {
   
-  const input1 = ["red", "blue", "green"];
-  const input2 = "pink";
-  const expected = ["red", "blue", "green", "pink"];
+  const input1 = ['red', 'blue', 'green'];
+  const input2 = 'pink';
+  const expected = ['red', 'blue', 'green', 'pink'];
   const result = addToList(input1, input2);
   
   if (
@@ -179,9 +181,9 @@ function testFunctionWorks(fn, input, expected) {
 
 function runTests() {
   
-  var list = [1, 4, 9, 16, 25]
-  var item1 = 1
-  var item2 = 9
+  var list = [1, 4, 9, 16, 25];
+  var item1 = 1;
+  var item2 = 9;
   
   var testResults = [
     testFunctionWorks(accessFirstItem, list, item1),
