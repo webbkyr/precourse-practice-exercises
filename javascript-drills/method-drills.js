@@ -5,7 +5,7 @@ function firstFourItems(array) {
 
 
 function lastThreeItems(array) {
-  return array.slice(-3)
+  return array.slice(-3);
 }
 
 
@@ -25,20 +25,20 @@ function testFunctionWorks(fn, input, expected) {
     result.every(function(item) {
       return expected.indexOf(item) > -1;
     })) {
-    console.log('SUCCESS: `' + fn.name + '` works!')
+    console.log('SUCCESS: `' + fn.name + '` works!');
     return true;
   } 
   else {
-    console.error('FAILURE: `' + fn.name + '` is not working')
+    console.error('FAILURE: `' + fn.name + '` is not working');
     return false;
   } 
 }
 
 function runTests() {
   
-  const list = ["red bull", "monster", "amp", "rockstar", "full throttle"];
-  const result1 = ["red bull", "monster", "amp", "rockstar"];
-  const result2 = ["amp", "rockstar", "full throttle"];
+  const list = ['red bull', 'monster', 'amp', 'rockstar', 'full throttle'];
+  const result1 = ['red bull', 'monster', 'amp', 'rockstar'];
+  const result2 = ['amp', 'rockstar', 'full throttle'];
   
   const testResults = [
     testFunctionWorks(firstFourItems, list, result1),
@@ -91,9 +91,9 @@ function testFunctionWorks(fn, input, expected) {
 
 function runTests() {
   
-  const list = ["red bull", "monster", "amp", "rockstar", "full throttle", "kickstart"];
-  const result1 = ["red bull", "monster", "amp", "rockstar", "full throttle"];
-  const result2 = ["red bull", "monster", "amp"];
+  const list = ['red bull', 'monster', 'amp', 'rockstar', 'full throttle', 'kickstart'];
+  const result1 = ['red bull', 'monster', 'amp', 'rockstar', 'full throttle'];
+  const result2 = ['red bull', 'monster', 'amp'];
   
   const testResults = [
     testFunctionWorks(minusLastItem, list, result1),
@@ -130,12 +130,12 @@ function testFunctionWorks(fn, input, expected) {
     result.every(function(item) {
       return expected.indexOf(item) > -1;
     })) {
-    console.log('SUCCESS: `' + fn.name + '` works!')
+    console.log('SUCCESS: `' + fn.name + '` works!');
     return true;
   } 
   else {
     console.error('FAILURE: `' + fn.name + '([' + input + '])` should be ' + expected +
-      ' but was ' + fn(input))
+      ' but was ' + fn(input));
     return false;
   } 
 }
@@ -165,8 +165,8 @@ runTests();
 
 function greatestToLeast(array) {
   return array.sort(function(a,b) {
-   return b - a;
-  })
+    return b - a;
+  });
 }
 
 // alt function
@@ -194,17 +194,17 @@ function testFunctionWorks(fn, input, expected) {
     result &&
     result.length === expected.length &&
     result.every(function(item, index) {
-     return (index === 0 || result[index] < result[index-1]);
+      return (index === 0 || result[index] < result[index-1]);
     }) &&
     result.every(function(item) {
       return expected.indexOf(item) > -1;
     })) {
-    console.log('SUCCESS: `' + fn.name + '` works!')
+    console.log('SUCCESS: `' + fn.name + '` works!');
     return true;
   }
   else {
     console.error('FAILURE: `' + fn.name + '([' + input + '])` should be ' + expected +
-      ' but was ' + fn(input))
+      ' but was ' + fn(input));
     return false;
   }
 }
@@ -260,12 +260,12 @@ function testFunctionWorks(fn, input, expected) {
     result.every(function(item) {
       return expected.indexOf(item) > -1;
     })) {
-    console.log('SUCCESS: `' + fn.name + '` works!')
+    console.log('SUCCESS: `' + fn.name + '` works!');
     return true;
   } 
   else {
     console.error('FAILURE: `' + fn.name + '([' + input + '])` should be ' + expected +
-      ' but was ' + fn(input))
+      ' but was ' + fn(input));
     return false;
   } 
 }
@@ -294,8 +294,8 @@ runTests();
 function divisibleBy5(array) {
   return array.find(function(num) {
     if (num % 5 === 0)
-    return num;
-  })
+      return num;
+  });
 }
 
 
